@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="2.0" init="Changes">
+    <Setting Name="GenericInterface::Invoker::Module###Ticket::TicketUpdate" Required="0" Valid="1">
+        <Description Translatable="1">GenericInterface module registration for the invoker layer.</Description>
+        <Navigation>GenericInterface::Invoker::ModuleRegistration</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name">Ticket::TicketUpdate</Item>
+                <Item Key="Controller">Ticket::TicketUpdate</Item>
+                <Item Key="ConfigDialog">AdminGenericInterfaceInvokerDefault</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="GenericInterface::Invoker::Ticket::TicketUpdate::Settings" Required="0" Valid="1">
+        <Description Translatable="1">
+            Define a result field for TicketID of the invoker response per webservice (WebserviceID => DynamicFieldName).
+        </Description>
+        <Value>
+          <Array>
+              <DefaultItem>
+                  <Hash>
+                      <Item Key="WebserviceId" ValueType="String" ValueRegex="\d+"></Item>
+                      <Item Key="DynamicFieldName" ValueType="String"></Item>
+                  </Hash>
+              </DefaultItem>
+              <Item>
+                  <Hash>
+                       <Item Key="WebserviceID" ValueType="String" ValueRegex="\d+">999</Item>
+                       <Item Key="DynamicFieldName" ValueType="String">ExampleName</Item>
+                  </Hash>
+              </Item>
+          </Array>
+        </Value>
+    </Setting>
+</otrs_config>
