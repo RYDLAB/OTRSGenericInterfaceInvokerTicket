@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>OTRSGenericInterfaceInvokerTicket</Name>
+    <Version>0.0.1</Version>
+    <Framework>6.x.x</Framework>
+    <Vendor>Rydlab</Vendor>
+    <URL>https://rydlab.ru/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">Ticket invokers</Description>
+    <ChangeLog Version="0.0.1" Date="2020-04-21 15:00:00">TicketUpdate invoker added</ChangeLog>
+    <PackageIsVisible>1</PackageIsVisible>
+    <PackageIsDownloadable>1</PackageIsDownloadable>
+    <PackageIsRemovable>1</PackageIsRemovable>
+    <BuildDate>?</BuildDate>
+    <BuildHost>?</BuildHost>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/XML/InvokerTicket.xml"></File>
+        <File Permission="644" Location="Kernel/GenericInterface/Invoker/Ticket/TicketUpdate.pm"></File>
+    </Filelist>
+</otrs_package>

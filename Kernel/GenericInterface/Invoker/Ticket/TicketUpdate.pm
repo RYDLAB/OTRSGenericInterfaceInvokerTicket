@@ -55,7 +55,6 @@ sub PrepareRequest {
 
     my $TicketObject       = $Kernel::OM->Get('Kernel::System::Ticket');
     my $ArticleObject      = $Kernel::OM->Get('Kernel::System::Ticket::Article');
-    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 
     my %Ticket = $TicketObject->TicketGet(
         TicketID      => $Self->{TicketID},
